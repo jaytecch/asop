@@ -1,6 +1,6 @@
 import React from 'react';
 function Footer() {
-  return <div className=''>Footer</div>;
+  return <div className=' bg-zinc-700 '>Footer</div>;
 }
 
 export default Footer;

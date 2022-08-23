@@ -12,13 +12,15 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route index element={<Hero />} />
-          <Route path='/mint' element={<Mint />} />
-          <Route path='/sellNFT' element={<SellNFT />} />
-          <Route path='/audit' element={<Audit />} />
-          <Route path='/about' element={<About />} />
-        </Routes>
+        <div className='bg-gray-200 px-12 relative h-[32rem]'>
+          <Routes>
+            <Route index element={<Hero />} />
+            <Route path='/mint' element={<Mint />} />
+            <Route path='/sellNFT' element={<SellNFT />} />
+            <Route path='/audit' element={<Audit />} />
+            <Route path='/about' element={<About />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
