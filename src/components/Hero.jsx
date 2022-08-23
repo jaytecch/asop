@@ -3,8 +3,8 @@ import Coin2 from '../assets/10A_Front.png';
 
 function Hero() {
   return (
-    <div className=' flex items-center gap-x-56 '>
-      <h1 className='text-5xl font-bold text-gray-400 w-80 tracking-wide leading-[4rem]'>
+    <div className=' container mx-auto flex items-center justify-center '>
+      <h1 className='text-5xl font-bold text-gray-400 w-80 tracking-wide leading-[4rem] '>
         Invest In Physical Gold Using NFTs
       </h1>
       <div className='flex'>

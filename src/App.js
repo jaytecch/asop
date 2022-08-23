@@ -12,7 +12,7 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <Header />
-        <div className='bg-gray-200 px-12 relative h-[32rem]'>
+        <div className='bg-gray-200 px-12 relative h-[32rem] '>
           <Routes>
             <Route index element={<Hero />} />
             <Route path='/mint' element={<Mint />} />
