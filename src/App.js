@@ -1,19 +1,26 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
-import { Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Hero from './components/Hero';
+import Mint from './components/Mint';
+import SellNFT from './components/SellNFT';
+import Audit from './components/Audit';
+import About from './components/About';
 
 function App() {
   return (
     <div className='App'>
-      <Router>
+      <BrowserRouter>
+        <Header />
         <Routes>
-          <Route path='/' />
-          <Route path='/mint' />
-          <Route path='/' />
+          <Route index element={<Hero />} />
+          <Route path='/mint' element={<Mint />} />
+          <Route path='/sellNFT' element={<SellNFT />} />
+          <Route path='/audit' element={<Audit />} />
+          <Route path='/about' element={<About />} />
         </Routes>
-      </Router>
-      <Header />
-      <Footer />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
