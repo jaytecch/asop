@@ -1,10 +1,47 @@
+import { useState } from 'react';
+import Accordion from '../components/Accordion';
+const data = [
+	{
+		question: 'What is your name?',
+		answer: 'Michael',
+		id: 1,
+	},
+	{
+		question: 'Where are you from?',
+		answer: 'Paris',
+		id: 2,
+	},
+	{
+		question: 'How old are you ',
+		answer: '99',
+		id: 3,
+	},
+];
+
 function Faq() {
-  return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit
-      asperiores recusandae earum inventore eum. Debitis nemo nam quia sed!
-    </div>
-  );
+	const [selected, setSelected] = useState(null);
+	const handleClick = (index) => {
+		if (selected === index) {
+			return setSelected(null);
+		}
+		setSelected(index);
+	};
+	console.log('selected', selected);
+	return (
+		<>
+			<div className='pt-16 '>
+				{data.map((faq, index) => (
+					<Accordion
+						question={faq.question}
+						answer={faq.answer}
+						selected={selected}
+						index={index}
+						onClick={() => handleClick(index)}
+					/>
+				))}
+			</div>
+		</>
+	);
 }
 
 export default Faq;
