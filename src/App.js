@@ -13,7 +13,7 @@ function App() {
     <div className='App'>
       <BrowserRouter>
         <Header />
-        <div className='bg-gray-300 pb-12 relative min-h-[70vh] '>
+        <div className='bg-gray-300 pb-12 relative min-h-[70vh] flex justify-center items-center '>
           <Routes>
             <Route index element={<Home />} />
             <Route path='/mint' element={<Mint />} />

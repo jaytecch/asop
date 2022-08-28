@@ -5,7 +5,7 @@ function Footer() {
       <div className='container mx-auto flex xl:gap-x-8 items-center relative'>
         <img src={goldLogo} alt='' className='h-32 p-4' />
         <span className=' bg-gray-400 h-28 w-0.5 top-2relative rounded-lg ' />
-        <div className=' text-yellow-300 ml-16 '>
+        <div className=' text-[#f9f194] ml-16 '>
           <p>
             Email:{' '}
             <span className='uppercase tracking-wide'>

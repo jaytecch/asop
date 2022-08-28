@@ -28,8 +28,8 @@ function Hamburger({ isClicked, handleClick }) {
           ></span>
         </div>
         <div
-          className={`h-[300px] w-[280px] bg-white absolute right-10 z-10 transition-all duration-500 rounded-xl flex flex-col font-bold justify-center text-center  ${
-            isClicked ? 'opacity-100' : 'opacity-0'
+          className={`h-[300px] w-[280px] bg-white absolute right-10 z-10 transition-all duration-500 rounded-xl  flex-col font-bold justify-center text-center  ${
+            isClicked ? 'opacity-100 flex' : 'opacity-0 hidden'
           } `}
         >
           <Link

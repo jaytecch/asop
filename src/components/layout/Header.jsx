@@ -17,7 +17,7 @@ function Header() {
           <img src={blackLogo} alt='logo' className='h-36 p-4' />
         </Link>
 
-        <nav className='hidden md:flex text-lg uppercase font-semibold absolute bottom-0 right-[10%]  '>
+        <nav className='hidden md:flex text-lg uppercase font-semibold absolute bottom-0 right-[15%]  '>
           <Link
             to='/mint'
             className={`transition-all hover:bg-gray-200 hover:opacity-100 border-2 rounded-lg p-4 ${
