@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 function Hamburger({ isClicked, handleClick }) {
   const location = useLocation();
   return (
-    <div className='md:hidden mr-10 '>
+    <div className='md:hidden '>
       <div
         className=' cursor-pointer border-1 border-white relative '
         onClick={handleClick}

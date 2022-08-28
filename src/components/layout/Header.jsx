@@ -1,4 +1,4 @@
-import Logo from '../../assets/Logo.svg';
+import blackLogo from '../../assets/black_logo.svg';
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import Hamburger from '../Hamburger';
@@ -11,10 +11,10 @@ function Header() {
     setIsClicked(!isClicked);
   };
   return (
-    <div className='bg-orange-300 '>
-      <div className=' container mx-auto flex items-center gap-x-[12rem] relative   '>
+    <div className='bg-orange-300 px-5 '>
+      <div className=' container mx-auto flex items-center justify-between md:gap-x-[12rem] relative   '>
         <Link to='/'>
-          <img src={Logo} alt='logo' className='h-56' />
+          <img src={blackLogo} alt='logo' className='h-36 p-4' />
         </Link>
 
         <nav className='hidden md:flex text-lg uppercase font-semibold absolute bottom-0 right-[10%]  '>
