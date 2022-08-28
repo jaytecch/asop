@@ -9,24 +9,24 @@ import About from './pages/About';
 import Faq from './pages/Faq';
 
 function App() {
-	return (
-		<div className='App'>
-			<BrowserRouter>
-				<Header />
-				<div className='bg-gray-200 pb-12 relative min-h-[70vh] '>
-					<Routes>
-						<Route index element={<Home />} />
-						<Route path='/mint' element={<Mint />} />
-						<Route path='/sell-nft' element={<SellNFT />} />
-						<Route path='/audit' element={<Audit />} />
-						<Route path='/about' element={<About />} />
-						<Route path='/faq' element={<Faq />} />
-					</Routes>
-				</div>
-				<Footer />
-			</BrowserRouter>
-		</div>
-	);
+  return (
+    <div className='App'>
+      <BrowserRouter>
+        <Header />
+        <div className='bg-gray-300 pb-12 relative min-h-[70vh] '>
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path='/mint' element={<Mint />} />
+            <Route path='/sell-nft' element={<SellNFT />} />
+            <Route path='/audit' element={<Audit />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/faq' element={<Faq />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
