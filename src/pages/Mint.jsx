@@ -14,12 +14,10 @@ function Mint({ walletConnected, userAddress }) {
   const provider = window?.phantom?.solana
   const network = "https://blue-polished-wave.solana-mainnet.discover.quiknode.pro/ef4102e56991757705dc4fe1316531d4ec87c5e3/"
   const connection = useRef(new Connection(network, "confirmed"))
-  const T1 = 2
-  const T2 = 14
-  const T3 = 28
-  // const T1 = 2_850_000_000
-  // const T2 = 14_250_000_000
-  // const T3 = 28_500_000_000
+  const T1 = 2_850_000_000
+  const T2 = 14_250_000_000
+  const T3 = 28_500_000_000
+
 
   // Prompts to display information to the user
   function prompt(text, icon, timer = 2000) {
