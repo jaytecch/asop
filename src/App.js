@@ -7,16 +7,20 @@ import SellNFT from './pages/SellNFT';
 import Audit from './pages/Audit';
 import About from './pages/About';
 import Faq from './pages/Faq';
+import { useState } from 'react';
 
 function App() {
+  const [userAddress, setUserAddress] = useState(null)
+  const [walletConnected, setWalletConnected] = useState(false)
   return (
     <div className='App'>
       <BrowserRouter>
-        <Header />
+      
+        <Header setUserAddress={setUserAddress} walletConnected={walletConnected} setWalletConnected={setWalletConnected}/>
         <div className='bg-gray-300 pb-12 relative min-h-[70vh] flex justify-center items-center '>
           <Routes>
             <Route index element={<Home />} />
-            <Route path='/mint' element={<Mint />} />
+            <Route path='/mint' element={<Mint userAddress={userAddress} walletConnected={walletConnected}/>} />
             <Route path='/sell-nft' element={<SellNFT />} />
             <Route path='/audit' element={<Audit />} />
             <Route path='/about' element={<About />} />
